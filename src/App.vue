@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="header">
-      <h1>Recordtime Department Management</h1>
+      <h1>Department Management</h1>
     </div>
      <button @click="showAddPopup = true">Add New</button>
     <DepartmentGrid :departments="departments" @edit-department="editDepartment" />
