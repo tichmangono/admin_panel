@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Cardiology",
+    "number": 101,
+    "location": "Rochester",
+    "activeUsers": 25
+  },
+  {
+    "name": "Neurology",
+    "number": 102,
+    "location": "Florida",
+    "activeUsers": 18
+  },
+  {
+    "name": "Oncology",
+    "number": 103,
+    "location": "Arizona",
+    "activeUsers": 20
+  },
+  {
+    "name": "Pediatrics",
+    "number": 104,
+    "location": "Rochester",
+    "activeUsers": 22
+  },
+  {
+    "name": "Dermatology",
+    "number": 105,
+    "location": "Florida",
+    "activeUsers": 15
+  },
+  {
+    "name": "Orthopedics",
+    "number": 106,
+    "location": "Arizona",
+    "activeUsers": 30
+  }
+ ]
