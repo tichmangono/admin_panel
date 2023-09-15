@@ -1,18 +1,41 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <DepartmentGrid :departments="departments" @add="addDepartment"></DepartmentGrid>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import DepartmentGrid from './components/DepartmentGrid.vue';
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    DepartmentGrid
+  },
+  data() {
+    return {
+      departments: []
+    };
+  },
+  mounted() {
+    // Fetch initial departments (you would typically make an API call here)
+    this.departments = [
+      {
+        name: 'HR',
+        number: 101,
+        location: 'Building A',
+        activeUsers: 5
+      },
+      // Add more departments...
+    ];
+  },
+  methods: {
+    addDepartment(department) {
+      this.departments.push(department);
+    }
   }
-}
+};
 </script>
+
 
 <style>
 #app {
